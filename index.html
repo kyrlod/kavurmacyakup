@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="theme-color" content="#0a0804" />
+  <title>Kavurmacı Yakup Usta — Lezzet Durağı</title>
+  <meta name="description" content="Türkiye'nin en özel yol restoranı. Otantik kavurma, ızgara ve kebap lezzetleri için Kavurmacı Yakup Usta'ya bekleriz." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/styles.css" />
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo">Yakup Usta</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menü">
+      <span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#story" class="nav-link">Hikayemiz</a></li>
+      <li><a href="#menu" class="nav-link">Menü</a></li>
+      <li><a href="#atmosphere" class="nav-link">Atmosfer</a></li>
+      <li><a href="#location" class="nav-link">Konum</a></li>
+      <li><a href="#reservation" class="nav-link nav-cta">Rezervasyon</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero" id="hero">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">1987'den Bu Yana</p>
+      <h1 class="hero-title">
+        <em>Kavurmacı</em><br>Yakup Usta
+      </h1>
+      <p class="hero-sub">Anadolu'nun ateşinde pişen, gelenekten beslenen lezzet</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-primary">Menümüz</a>
+        <a href="#reservation" class="btn btn-ghost">Rezervasyon</a>
+        <a href="https://maps.google.com" target="_blank" class="btn btn-ghost">Yol Tarifi</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Keşfet</span>
+    </div>
+  </section>
+
+  <section class="story" id="story">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-text">
+          <span class="label">Hikayemiz</span>
+          <h2 class="section-title">Ateşin ve<br><em>Ustalığın</em> Buluşması</h2>
+          <p>1987 yılında küçük bir yol kenarı ocağı olarak başlayan serüvenimiz, bugün Türkiye'nin en çok aranan yol restoranlarından biri haline geldi. Yakup Usta'nın elleri, her kavurmanın içinde onlarca yıllık deneyimi taşır.</p>
+          <p>Sabahın erken saatlerinde başlayan hazırlık, ateşle buluşan seçkin etler, ve sofranıza getirilen her tabakta bir yaşam boyu süren ustalık gizlidir.</p>
+          <div class="story-stats">
+            <div class="stat"><span class="stat-num">37</span><span class="stat-label">Yıllık Tecrübe</span></div>
+            <div class="stat"><span class="stat-num">500+</span><span class="stat-label">Günlük Tabak</span></div>
+            <div class="stat"><span class="stat-num">4.9</span><span class="stat-label">Müşteri Puanı</span></div>
+          </div>
+        </div>
+        <div class="story-visual">
+          <div class="story-img-wrap">
+            <img src="/images/interior1.jpg" alt="Restoran içi" class="story-img" loading="lazy" onerror="this.style.display='none'" />
+            <div class="story-img-overlay"></div>
+          </div>
+          <div class="story-badge">
+            <span>Premium</span>
+            <span>Lezzet</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="label">Lezzetlerimiz</span>
+        <h2 class="section-title">Seçkin <em>Menümüz</em></h2>
+      </div>
+      <div class="menu-tabs">
+        <button class="tab-btn active" data-tab="kavurma">Kavurmalar</button>
+        <button class="tab-btn" data-tab="izgara">Izgaralar</button>
+        <button class="tab-btn" data-tab="kebap">Kebaplar</button>
+        <button class="tab-btn" data-tab="corba">Çorbalar</button>
+        <button class="tab-btn" data-tab="tatli">Tatlılar</button>
+      </div>
+      <div class="menu-panels">
+        <div class="menu-panel active" data-panel="kavurma">
+          <div class="menu-grid">
+            <div class="menu-card">
+              <div class="menu-card-img"><img src="/images/food1.jpg" alt="Kavurma" loading="lazy" onerror="this.parentElement.classList.add('no-img')" /></div>
+              <div class="menu-card-body">
+                <h3>Yakup Usta Kavurması</h3>
+                <p>Özel baharatlarla hazırlanmış, odun ateşinde pişirilmiş dana kavurma</p>
+                <span class="price">₺485</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card-img"><img src="/images/food2.jpg" alt="Kuzu Kavurma" loading="lazy" onerror="this.parentElement.classList.add('no-img')" /></div>
+              <div class="menu-card-body">
+                <h3>Kuzu Kavurma</h3>
+                <p>Taze kuzu eti, tereyağı ve sarımsakla kavurulmuş, yöresel baharat demeti</p>
+                <span class="price">₺520</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card-img"><img src="/images/food3.jpg" alt="Ciğer Kavurma" loading="lazy" onerror="this.parentElement.classList.add('no-img')" /></div>
+              <div class="menu-card-body">
+                <h3>Ciğer Kavurma</h3>
+                <p>Günlük taze ciğer, biber, soğan ile kavurulmuş, geleneksel tarif</p>
+                <span class="price">₺295</span>
+              </div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card-img"></div>
+              <div class="menu-card-body">
+                <h3>Saç Kavurma</h3>
+                <p>Sacda közlenmiş sebzeler eşliğinde, seçkin dana eti kavurması</p>
+                <span class="price">₺445</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-panel" data-panel="izgara">
+          <div class="menu-grid">
+            <div class="menu-card">
+              <div class="menu-card-img"></div>
+              <div class="menu-card-body"><h3>Antrikot</h3><p>250gr USDA prime antrikot, mevsim garnitürü ile servis edilir</p><span class="price">₺680</span></div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card-img"></div>
+              <div class="menu-card-body"><h3>Kuzu Pirzola</h3><p>8 adet taze kuzu pirzola, közlenmiş domates ve biber ile</p><span class="price">₺590</span></div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card-img"></div>
+              <div class="menu-card-body"><h3>Kanat</h3><p>Mangal ateşinde pişirilmiş tavuk kanatları, özel sos ile</p><span class="price">₺285</span></div>
+            </div>
+            <div class="menu-card">
+              <div class="menu-card-img"></div>
+              <div class="menu-card-body"><h3>Köfte</h3><p>El yapımı ızgara köfte, piyaz ve közlenmiş biber ile</p><span class="price">₺320</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-panel" data-panel="kebap">
+          <div class="menu-grid">
+            <div class="menu-card"><div class="menu-card-img"></div><div class="menu-card-body"><h3>Adana Kebap</h3><p>Özel baharat karışımlı kıyma kebabı, lavaş ve cacık ile</p><span class="price">₺340</span></div></div>
+            <div class="menu-card"><div class="menu-card-img"></div><div class="menu-card-body"><h3>Urfa Kebap</h3><p>Hafif acılı, aromalı Urfa usulü şiş kebabı</p><span class="price">₺340</span></div></div>
+            <div class="menu-card"><div class="menu-card-img"></div><div class="menu-card-body"><h3>Şiş Kebap</h3><p>Kuşbaşı dana eti, biber ve soğan ile marine edilmiş</p><span class="price">₺390</span></div></div>
+            <div class="menu-card"><div class="menu-card-img"></div><div class="menu-card-body"><h3>Beyti Kebap</h3><p>Rulo kıyma kebabı, domates sosu ve yoğurt ile</p><span class="price">₺380</span></div></div>
+          </div>
+        </div>
+        <div class="menu-panel" data-panel="corba">
+          <div class="menu-grid">
+            <div class="menu-card"><div class="menu-card-img"></div><div class="menu-card-body"><h3>İşkembe Çorbası</h3><p>Geleneksel tarif, sarımsaklı sirke ve pul biber ile</p><span class="price">₺125</span></div></div>
+            <div class="menu-card"><div class="menu-card-img"></div><div class="menu-card-body"><h3>Mercimek Çorbası</h3><p>Günlük pişirilen kırmızı mercimek, limon ile servis edilir</p><span class="price">₺95</span></div></div>
+            <div class="menu-card"><div class="menu-card-img"></div><div class="menu-card-body"><h3>Paça Çorbası</h3><p>Yavaş pişirilmiş kuzu paça, ekşili yoğurt ile</p><span class="price">₺145</span></div></div>
+          </div>
+        </div>
+        <div class="menu-panel" data-panel="tatli">
+          <div class="menu-grid">
+            <div class="menu-card"><div class="menu-card-img"></div><div class="menu-card-body"><h3>Künefe</h3><p>Çökelek peynirli, şerbetli sıcak künefe, kaymak ile</p><span class="price">₺185</span></div></div>
+            <div class="menu-card"><div class="menu-card-img"></div><div class="menu-card-body"><h3>Sütlaç</h3><p>Fırında üstü kızarmış geleneksel pirinç sütlacı</p><span class="price">₺120</span></div></div>
+            <div class="menu-card"><div class="menu-card-img"></div><div class="menu-card-body"><h3>Baklava</h3><p>El açması fıstıklı baklava, antep fıstığı ile servis edilir</p><span class="price">₺165</span></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="atmosphere" id="atmosphere">
+    <div class="atm-header">
+      <span class="label">Atmosfer</span>
+      <h2 class="section-title">Hissedilen <em>Sıcaklık</em></h2>
+    </div>
+    <div class="atm-gallery">
+      <div class="atm-item atm-large">
+        <img src="/images/fire1.jpg" alt="Ateş" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+        <div class="atm-caption">Odun Ateşi</div>
+      </div>
+      <div class="atm-item">
+        <img src="/images/interior2.jpg" alt="İç mekan" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+        <div class="atm-caption">Samimi Ortam</div>
+      </div>
+      <div class="atm-item">
+        <img src="/images/smoke1.jpg" alt="Duman" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+        <div class="atm-caption">Gece Sihri</div>
+      </div>
+      <div class="atm-item">
+        <img src="/images/hero2.jpg" alt="Lezzet" loading="lazy" onerror="this.parentElement.classList.add('no-img')" />
+        <div class="atm-caption">Seçkin Lezzet</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="experience" id="experience">
+    <div class="container">
+      <div class="exp-grid">
+        <div class="exp-item reveal">
+          <div class="exp-icon">🔥</div>
+          <h3>Odun Ateşi</h3>
+          <p>Her tabak, geleneksel odun ateşinde, ustalıkla pişirilir. Dumanlı aromanın sırrı bu ateştedir.</p>
+        </div>
+        <div class="exp-item reveal">
+          <div class="exp-icon">🥩</div>
+          <h3>Seçkin Et</h3>
+          <p>Yalnızca güvenilir çiftliklerden, günlük taze tedarik edilen, sertifikalı etler kullanılır.</p>
+        </div>
+        <div class="exp-item reveal">
+          <div class="exp-icon">🌿</div>
+          <h3>Doğal Baharatlar</h3>
+          <p>Yıllar içinde geliştirilen özel baharat karışımları, her lezzeti eşsiz kılar.</p>
+        </div>
+        <div class="exp-item reveal">
+          <div class="exp-icon">🤝</div>
+          <h3>Sıcak Konukseverlik</h3>
+          <p>Her müşteri, ailemizin bir parçasıdır. Sofranızdan kalktığınızda yeniden gelmek istersiniz.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="location" id="location">
+    <div class="container">
+      <div class="loc-grid">
+        <div class="loc-info">
+          <span class="label">Bizi Bulun</span>
+          <h2 class="section-title">Neredeyiz</h2>
+          <div class="loc-details">
+            <div class="loc-item">
+              <span class="loc-icon">📍</span>
+              <div>
+                <strong>Adres</strong>
+                <p>D-100 Karayolu, 41 km, Sapanca Çıkışı<br>Adapazarı / Sakarya</p>
+              </div>
+            </div>
+            <div class="loc-item">
+              <span class="loc-icon">🕐</span>
+              <div>
+                <strong>Çalışma Saatleri</strong>
+                <p>Her gün: 07:00 – 01:00<br>Yıl boyunca açık</p>
+              </div>
+            </div>
+            <div class="loc-item">
+              <span class="loc-icon">📞</span>
+              <div>
+                <strong>İletişim</strong>
+                <p>+90 264 555 0 187<br>info@yakupusta.com.tr</p>
+              </div>
+            </div>
+          </div>
+          <a href="https://maps.google.com" target="_blank" class="btn btn-primary">Google Maps'te Aç</a>
+        </div>
+        <div class="loc-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96558.34!2d30.3956!3d40.7901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ccfbc18b0e2a25%3A0x6c5b5c5b5c5b5c5b!2sSapanca!5e0!3m2!1str!2str!4v1699000000000"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Konum"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reservation" id="reservation">
+    <div class="res-bg"></div>
+    <div class="container">
+      <span class="label">Rezervasyon</span>
+      <h2 class="section-title res-title">Bir Masa <em>Ayırın</em></h2>
+      <p class="res-sub">Özel anlarınız için masanızı önceden ayırın.<br>Grubunuza özel menü ve servis imkânı.</p>
+      <div class="res-actions">
+        <a href="tel:+902645550187" class="btn btn-primary btn-lg">Hemen Ara</a>
+        <a href="https://wa.me/902645550187" target="_blank" class="btn btn-whatsapp btn-lg">WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <p class="footer-logo">Kavurmacı Yakup Usta</p>
+          <p class="footer-tagline">1987'den bu yana, Anadolu'nun en güzel lezzetleri.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#story">Hikayemiz</a>
+          <a href="#menu">Menü</a>
+          <a href="#atmosphere">Atmosfer</a>
+          <a href="#location">Konum</a>
+        </div>
+        <div class="footer-contact">
+          <p>+90 264 555 0 187</p>
+          <p>info@yakupusta.com.tr</p>
+          <p>D-100, Sapanca / Sakarya</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Kavurmacı Yakup Usta. Tüm hakları saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/902645550187" class="whatsapp-fab" target="_blank" aria-label="WhatsApp ile Rezervasyon">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script type="module" src="/src/script.js"></script>
+</body>
+</html>
