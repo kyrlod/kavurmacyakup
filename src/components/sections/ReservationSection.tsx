@@ -48,9 +48,9 @@ export default function ReservationSection() {
 
         {/* Info */}
         <motion.div
-          initial={{ opacity: 0, x: -20 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.9 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
           <span className="block text-[0.65rem] md:text-[0.72rem] tracking-[0.3em] uppercase text-[var(--gold)] mb-2 md:mb-3">Masa Ayırt</span>
@@ -87,9 +87,9 @@ export default function ReservationSection() {
 
         {/* Form */}
         <motion.div
-          initial={{ opacity: 0, x: 20 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.9, delay: 0.2 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
           viewport={{ once: true }}
           className="p-6 md:p-10 rounded-[24px] md:rounded-[32px] shadow-2xl relative overflow-hidden"
           style={{ 

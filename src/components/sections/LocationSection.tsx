@@ -20,9 +20,9 @@ export default function LocationSection() {
     <section id="location" className="py-16 md:py-24 px-4 md:px-8 bg-[var(--dark-2)]">
       <div className="max-w-5xl mx-auto">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
           viewport={{ once: true }}
           className="text-center mb-10 md:mb-12"
         >
@@ -33,9 +33,9 @@ export default function LocationSection() {
 
         <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start">
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.9 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
             <iframe
@@ -55,9 +55,9 @@ export default function LocationSection() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.9, delay: 0.2 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
             viewport={{ once: true }}
             className="flex flex-col gap-4 md:gap-6"
           >

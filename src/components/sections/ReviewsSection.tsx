@@ -44,16 +44,16 @@ export default function ReviewsSection() {
         {/* Header Section */}
         <div className="text-center mb-16">
           <motion.span
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             className="inline-block px-4 py-1 text-[0.65rem] uppercase tracking-[0.4em] text-[#e6a84a] border border-[#e6a84a]/20 rounded-full mb-6"
           >
             MİSAFİR DENEYİMLERİ
           </motion.span>
           <motion.h2
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
             className="font-serif text-4xl md:text-5xl font-bold text-[#faf4e6]"
